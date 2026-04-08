@@ -5,21 +5,21 @@
 class Bitsplitter < Formula
   desc "CLI subnet calculator for IPv4 and IPv6"
   homepage "https://github.com/justinsautter/bitsplitter"
-  version "1.1.0"
+  version "1.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/justinsautter/BitSplitter/releases/download/v1.1.0/BitSplitter_darwin_amd64.tar.gz"
-      sha256 "65e0d9212eff76d2758a98f1b71affeb60d8c8a952a1f83b20b7593cea3673c8"
+      url "https://github.com/justinsautter/BitSplitter/releases/download/v1.1.1/BitSplitter_darwin_amd64.tar.gz"
+      sha256 "e3396c0629a7db32e94b98fa5e420ffd8cbdfa10e7feaad6d65df7a58ea7d00a"
 
       define_method(:install) do
         bin.install "bitsplitter"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/justinsautter/BitSplitter/releases/download/v1.1.0/BitSplitter_darwin_arm64.tar.gz"
-      sha256 "14c292222da140c02dd3e6d182523e029889a6514ac7e500eef0ff0c2c074b15"
+      url "https://github.com/justinsautter/BitSplitter/releases/download/v1.1.1/BitSplitter_darwin_arm64.tar.gz"
+      sha256 "bf9d3c5471d38ed79557cc1d2428cbf2188946ec46bb42b9edd38b843c24466f"
 
       define_method(:install) do
         bin.install "bitsplitter"
@@ -29,15 +29,15 @@ class Bitsplitter < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/justinsautter/BitSplitter/releases/download/v1.1.0/BitSplitter_linux_amd64.tar.gz"
-      sha256 "a5806249c727ac4ebd177441db3e51e174c2b67d3dd98c3df4fa4b7b41f2388d"
+      url "https://github.com/justinsautter/BitSplitter/releases/download/v1.1.1/BitSplitter_linux_amd64.tar.gz"
+      sha256 "123adf20b792f2dec7a8528eab4f739b478d5ee2541bef5e6a3fb3d424e19936"
       define_method(:install) do
         bin.install "bitsplitter"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/justinsautter/BitSplitter/releases/download/v1.1.0/BitSplitter_linux_arm64.tar.gz"
-      sha256 "e0569c7f6806c0e72ea163c0b9be1531f08a66f57a832884c890d868dc45fabf"
+      url "https://github.com/justinsautter/BitSplitter/releases/download/v1.1.1/BitSplitter_linux_arm64.tar.gz"
+      sha256 "5d535294f9fc7e1e76178ea11ccbc72fd7e46833a859caaa388084f7e373d903"
       define_method(:install) do
         bin.install "bitsplitter"
       end
